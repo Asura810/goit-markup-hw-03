@@ -248,8 +248,7 @@ a {
   text-align: center;
   color: #434455;
 }
-.team-info {
-}
+
 /* section 4*/
 .portfolio {
   padding-top: 120px;
@@ -326,7 +325,7 @@ a {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  width: fit-content;
+  width: 264px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
