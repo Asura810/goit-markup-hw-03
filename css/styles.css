@@ -325,8 +325,6 @@ a {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  padding: 4px 8px;
-  line-height: 1;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
