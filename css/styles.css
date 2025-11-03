@@ -20,7 +20,9 @@ h6,
 p {
   margin: 0;
 }
-
+img {
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -130,6 +132,9 @@ a {
   color: #fff;
 }
 .button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -152,12 +157,15 @@ a {
 .features {
   padding: 120px 0;
 }
+.visually-hidden {
+}
+
 .features-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  gap: 8px;
+  gap: 24px;
 }
 .features-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -168,7 +176,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-block: 8px;
+  margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -191,7 +199,7 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin: 0 0 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -199,6 +207,7 @@ a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .team-item {
@@ -225,10 +234,17 @@ a {
   text-align: center;
   color: #434455;
 }
-
+.team-info {
+}
 /* section 4*/
 .portfolio {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-title {
@@ -239,7 +255,7 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  margin-bottom: 8px;
 }
 
 .portfolio-list {
@@ -248,8 +264,9 @@ a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 48px;
+
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -283,13 +300,14 @@ a {
 /* footer */
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-container {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
-  gap: 16px;
+  margin-bottom: 16px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
