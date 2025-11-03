@@ -26,6 +26,18 @@ img {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
 
 /* загальні стилі common*/
 .container {
@@ -157,16 +169,6 @@ a {
 .features {
   padding: 120px 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
 
 .features-list {
   display: flex;
@@ -209,6 +211,9 @@ a {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+.team-info {
+  padding: 32px 0;
+}
 
 .team-list {
   display: flex;
@@ -233,6 +238,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-card-role {
   font-weight: 400;
@@ -263,7 +269,7 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -311,10 +317,14 @@ a {
   padding: 100px 0;
 }
 .footer-container {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-bottom: 16px;
+}
+.footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo .logo-part {
