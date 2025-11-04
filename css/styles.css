@@ -31,12 +31,12 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  padding: 0;
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* загальні стилі common*/
@@ -316,7 +316,6 @@ a {
   padding: 100px 0;
 }
 .footer-container {
-  display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
